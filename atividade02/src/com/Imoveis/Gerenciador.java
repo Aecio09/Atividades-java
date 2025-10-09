@@ -22,7 +22,7 @@ public class Gerenciador {
                 addImovel.addimovel();
             }
             else if (Opcao == 2) {
-                view.Viewimoveis(addImovel.getImoveis());
+                view.Opcao(addImovel.getImoveis());
             }
             else if (Opcao == 4) {
                 System.out.println("Muito obrigado por usar nosso sistema");
