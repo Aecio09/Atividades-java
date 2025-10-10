@@ -7,9 +7,10 @@ public class Gerenciador {
     Scanner scanner = new Scanner(System.in);
     AddImovel addImovel = new AddImovel();  
     ViewImoveis view = new ViewImoveis(); 
+    boolean VerdadeiroOuFalso = true;
 
     public void inicio () {
-        while (true) { 
+        while (VerdadeiroOuFalso) { 
             System.out.println("==========================");
             System.out.println("Oque voce dejesa?");
             System.out.println("1 para Criar um Imovel");
@@ -26,7 +27,7 @@ public class Gerenciador {
             }
             else if (Opcao == 4) {
                 System.out.println("Muito obrigado por usar nosso sistema");
-                break;
+                VerdadeiroOuFalso = false;
             }
             else {
                 System.out.println("Opção inválida");
